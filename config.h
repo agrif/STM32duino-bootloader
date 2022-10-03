@@ -406,6 +406,18 @@
     #define LED_PIN             3
     #define LED_ON_STATE        0
 
+#elif defined TARGET_BLUEGRASS_REV1
+
+    #define LED_BANK            GPIOC
+    #define LED_PIN             13
+    #define LED_ON_STATE        0
+
+    #define BUTTON_BANK         GPIOB
+    #define BUTTON_PIN          2
+    #define BUTTON_PRESSED_STATE 1
+
+    /* CRISTAL 16MHz */
+    #define XTAL16M             1
 
 #else
     #error "No config for this target"
